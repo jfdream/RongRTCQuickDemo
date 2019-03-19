@@ -15,6 +15,9 @@
 		173208432240BE880085EB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 173208422240BE880085EB7D /* main.m */; };
 		1732084D2240BE880085EB7D /* RongRTCQuickDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1732084C2240BE880085EB7D /* RongRTCQuickDemoTests.m */; };
 		173208582240BE880085EB7D /* RongRTCQuickDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 173208572240BE880085EB7D /* RongRTCQuickDemoUITests.m */; };
+		173208682240BF0D0085EB7D /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 173208652240BF0D0085EB7D /* libopencore-amrnb.a */; };
+		173208692240BF0D0085EB7D /* RongIMLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173208662240BF0D0085EB7D /* RongIMLib.framework */; };
+		1732086A2240BF0D0085EB7D /* RongRTCLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173208672240BF0D0085EB7D /* RongRTCLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		173208532240BE880085EB7D /* RongRTCQuickDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RongRTCQuickDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		173208572240BE880085EB7D /* RongRTCQuickDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RongRTCQuickDemoUITests.m; sourceTree = "<group>"; };
 		173208592240BE880085EB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		173208652240BF0D0085EB7D /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		173208662240BF0D0085EB7D /* RongIMLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RongIMLib.framework; sourceTree = "<group>"; };
+		173208672240BF0D0085EB7D /* RongRTCLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RongRTCLib.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173208692240BF0D0085EB7D /* RongIMLib.framework in Frameworks */,
+				173208682240BF0D0085EB7D /* libopencore-amrnb.a in Frameworks */,
+				1732086A2240BF0D0085EB7D /* RongRTCLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +114,9 @@
 				173208342240BE860085EB7D /* AppDelegate.m */,
 				173208362240BE860085EB7D /* ViewController.h */,
 				173208372240BE860085EB7D /* ViewController.m */,
+				173208652240BF0D0085EB7D /* libopencore-amrnb.a */,
+				173208662240BF0D0085EB7D /* RongIMLib.framework */,
+				173208672240BF0D0085EB7D /* RongRTCLib.framework */,
 				173208392240BE860085EB7D /* Main.storyboard */,
 				1732083C2240BE880085EB7D /* Assets.xcassets */,
 				1732083E2240BE880085EB7D /* LaunchScreen.storyboard */,
@@ -437,12 +449,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CVMN4UZK4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RongRTCQuickDemo",
+				);
 				INFOPLIST_FILE = RongRTCQuickDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.soooner.RongRTCQuickDemo;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RongRTCQuickDemo",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.rongcloud.RongRTCQuickDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,12 +475,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CVMN4UZK4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RongRTCQuickDemo",
+				);
 				INFOPLIST_FILE = RongRTCQuickDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.soooner.RongRTCQuickDemo;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RongRTCQuickDemo",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.rongcloud.RongRTCQuickDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
