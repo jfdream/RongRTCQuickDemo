@@ -1,0 +1,16 @@
+PODS:
+  - RongRTCLib (0.0.1)
+
+DEPENDENCIES:
+  - RongRTCLib (~> 0.0.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RongRTCLib
+
+SPEC CHECKSUMS:
+  RongRTCLib: dc1ec9e0d26a19c960d8ad35f570374b8ee316df
+
+PODFILE CHECKSUM: 36895eb895c0cb368904befdf5fd88865f5349c1
+
+COCOAPODS: 1.5.3

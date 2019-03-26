@@ -15,9 +15,9 @@
 		173208432240BE880085EB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 173208422240BE880085EB7D /* main.m */; };
 		1732084D2240BE880085EB7D /* RongRTCQuickDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1732084C2240BE880085EB7D /* RongRTCQuickDemoTests.m */; };
 		173208582240BE880085EB7D /* RongRTCQuickDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 173208572240BE880085EB7D /* RongRTCQuickDemoUITests.m */; };
-		173208682240BF0D0085EB7D /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 173208652240BF0D0085EB7D /* libopencore-amrnb.a */; };
-		173208692240BF0D0085EB7D /* RongIMLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173208662240BF0D0085EB7D /* RongIMLib.framework */; };
-		1732086A2240BF0D0085EB7D /* RongRTCLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173208672240BF0D0085EB7D /* RongRTCLib.framework */; };
+		46B71D1475B7BD94FE067DE1 /* libPods-RongRTCQuickDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E72666D4522B9358726E71BC /* libPods-RongRTCQuickDemoUITests.a */; };
+		566E0C61B461266D975A60F8 /* libPods-RongRTCQuickDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1EBA150AF8E66048974557 /* libPods-RongRTCQuickDemoTests.a */; };
+		5AAB0846B3CAE222EFA3060E /* libPods-RongRTCQuickDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E730506F98A2D777D6DFBD6C /* libPods-RongRTCQuickDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +54,15 @@
 		173208532240BE880085EB7D /* RongRTCQuickDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RongRTCQuickDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		173208572240BE880085EB7D /* RongRTCQuickDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RongRTCQuickDemoUITests.m; sourceTree = "<group>"; };
 		173208592240BE880085EB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		173208652240BF0D0085EB7D /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
-		173208662240BF0D0085EB7D /* RongIMLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RongIMLib.framework; sourceTree = "<group>"; };
-		173208672240BF0D0085EB7D /* RongRTCLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RongRTCLib.framework; sourceTree = "<group>"; };
+		2E46FBBD9C34840920BCE287 /* Pods-RongRTCQuickDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongRTCQuickDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongRTCQuickDemoTests/Pods-RongRTCQuickDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DD3D463E3820712EC339A39 /* Pods-RongRTCQuickDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongRTCQuickDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongRTCQuickDemoUITests/Pods-RongRTCQuickDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		70DB09C3D11BCB44DD29AAAD /* Pods-RongRTCQuickDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongRTCQuickDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongRTCQuickDemoTests/Pods-RongRTCQuickDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE1EBA150AF8E66048974557 /* libPods-RongRTCQuickDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RongRTCQuickDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FD5E621C8F99DB5EAD8C7A /* Pods-RongRTCQuickDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongRTCQuickDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongRTCQuickDemoUITests/Pods-RongRTCQuickDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DCADDA257583AC5EB43D54A6 /* Pods-RongRTCQuickDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongRTCQuickDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongRTCQuickDemo/Pods-RongRTCQuickDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E72666D4522B9358726E71BC /* libPods-RongRTCQuickDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RongRTCQuickDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E730506F98A2D777D6DFBD6C /* libPods-RongRTCQuickDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RongRTCQuickDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7299DE6D6C9292F278EA96 /* Pods-RongRTCQuickDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongRTCQuickDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongRTCQuickDemo/Pods-RongRTCQuickDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				173208692240BF0D0085EB7D /* RongIMLib.framework in Frameworks */,
-				173208682240BF0D0085EB7D /* libopencore-amrnb.a in Frameworks */,
-				1732086A2240BF0D0085EB7D /* RongRTCLib.framework in Frameworks */,
+				5AAB0846B3CAE222EFA3060E /* libPods-RongRTCQuickDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566E0C61B461266D975A60F8 /* libPods-RongRTCQuickDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B71D1475B7BD94FE067DE1 /* libPods-RongRTCQuickDemoUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +100,8 @@
 				1732084B2240BE880085EB7D /* RongRTCQuickDemoTests */,
 				173208562240BE880085EB7D /* RongRTCQuickDemoUITests */,
 				173208312240BE860085EB7D /* Products */,
+				77AF7185DCD6657A4E6FFAB4 /* Pods */,
+				4CD364594D807AB56CD68361 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,9 +122,6 @@
 				173208342240BE860085EB7D /* AppDelegate.m */,
 				173208362240BE860085EB7D /* ViewController.h */,
 				173208372240BE860085EB7D /* ViewController.m */,
-				173208652240BF0D0085EB7D /* libopencore-amrnb.a */,
-				173208662240BF0D0085EB7D /* RongIMLib.framework */,
-				173208672240BF0D0085EB7D /* RongRTCLib.framework */,
 				173208392240BE860085EB7D /* Main.storyboard */,
 				1732083C2240BE880085EB7D /* Assets.xcassets */,
 				1732083E2240BE880085EB7D /* LaunchScreen.storyboard */,
@@ -144,6 +149,29 @@
 			path = RongRTCQuickDemoUITests;
 			sourceTree = "<group>";
 		};
+		4CD364594D807AB56CD68361 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E730506F98A2D777D6DFBD6C /* libPods-RongRTCQuickDemo.a */,
+				CE1EBA150AF8E66048974557 /* libPods-RongRTCQuickDemoTests.a */,
+				E72666D4522B9358726E71BC /* libPods-RongRTCQuickDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77AF7185DCD6657A4E6FFAB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF7299DE6D6C9292F278EA96 /* Pods-RongRTCQuickDemo.debug.xcconfig */,
+				DCADDA257583AC5EB43D54A6 /* Pods-RongRTCQuickDemo.release.xcconfig */,
+				2E46FBBD9C34840920BCE287 /* Pods-RongRTCQuickDemoTests.debug.xcconfig */,
+				70DB09C3D11BCB44DD29AAAD /* Pods-RongRTCQuickDemoTests.release.xcconfig */,
+				3DD3D463E3820712EC339A39 /* Pods-RongRTCQuickDemoUITests.debug.xcconfig */,
+				D5FD5E621C8F99DB5EAD8C7A /* Pods-RongRTCQuickDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +179,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1732085C2240BE880085EB7D /* Build configuration list for PBXNativeTarget "RongRTCQuickDemo" */;
 			buildPhases = (
+				E72C7E9D10EFF76A732ABD36 /* [CP] Check Pods Manifest.lock */,
 				1732082C2240BE860085EB7D /* Sources */,
 				1732082D2240BE860085EB7D /* Frameworks */,
 				1732082E2240BE860085EB7D /* Resources */,
@@ -168,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1732085F2240BE880085EB7D /* Build configuration list for PBXNativeTarget "RongRTCQuickDemoTests" */;
 			buildPhases = (
+				1E88F6ED4ACB701DAB01A887 /* [CP] Check Pods Manifest.lock */,
 				173208442240BE880085EB7D /* Sources */,
 				173208452240BE880085EB7D /* Frameworks */,
 				173208462240BE880085EB7D /* Resources */,
@@ -186,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 173208622240BE880085EB7D /* Build configuration list for PBXNativeTarget "RongRTCQuickDemoUITests" */;
 			buildPhases = (
+				E07F3D47D9C7ABBE81884C13 /* [CP] Check Pods Manifest.lock */,
 				1732084F2240BE880085EB7D /* Sources */,
 				173208502240BE880085EB7D /* Frameworks */,
 				173208512240BE880085EB7D /* Resources */,
@@ -268,6 +299,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E88F6ED4ACB701DAB01A887 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RongRTCQuickDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E07F3D47D9C7ABBE81884C13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RongRTCQuickDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E72C7E9D10EFF76A732ABD36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RongRTCQuickDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1732082C2240BE860085EB7D /* Sources */ = {
@@ -445,6 +533,7 @@
 		};
 		1732085D2240BE880085EB7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF7299DE6D6C9292F278EA96 /* Pods-RongRTCQuickDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +560,7 @@
 		};
 		1732085E2240BE880085EB7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCADDA257583AC5EB43D54A6 /* Pods-RongRTCQuickDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -497,6 +587,7 @@
 		};
 		173208602240BE880085EB7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E46FBBD9C34840920BCE287 /* Pods-RongRTCQuickDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -516,6 +607,7 @@
 		};
 		173208612240BE880085EB7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70DB09C3D11BCB44DD29AAAD /* Pods-RongRTCQuickDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +627,7 @@
 		};
 		173208632240BE880085EB7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD3D463E3820712EC339A39 /* Pods-RongRTCQuickDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CVMN4UZK4;
@@ -553,6 +646,7 @@
 		};
 		173208642240BE880085EB7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5FD5E621C8F99DB5EAD8C7A /* Pods-RongRTCQuickDemoUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CVMN4UZK4;

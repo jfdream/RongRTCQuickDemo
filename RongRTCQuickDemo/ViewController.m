@@ -20,21 +20,17 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     // AppKey 设置
-    [[RCIMClient sharedRCIMClient] initWithAppKey:@"c9kqb3rdkbb8j"];
-    [[RCIMClient sharedRCIMClient] useRTCOnly];
-    [[RCIMClient sharedRCIMClient] setServerInfo:@"http://navqa.cn.ronghub.com" fileServer:@"xiaxie"];
-    
+//    [[RCIMClient sharedRCIMClient] initWithAppKey:@"XXXXXXX"];
+//    连接 IM
     // 加入房间
     [[RongRTCEngine sharedEngine] joinRoom:@"HelloRTC" completion:^(RongRTCRoom * _Nullable room, RongRTCCode code) {
         room.delegate = self;
         self.room = room;
         // 发布资源
-        [room.localUser publishDefaultAVStream:^(BOOL isSuccess, NSString *desc) {
+        [room.localUser publishDefaultAVStream:^(BOOL isSuccess, RongRTCCode desc) {
             
         }];
-        
     }];
-    
     // 设置本地渲染视图
     RongRTCLocalVideoView * localView = [[RongRTCLocalVideoView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
     [[RongRTCAVCapturer sharedInstance] setVideoRender:localView];
@@ -43,7 +39,7 @@
 -(void)didPublishStreams:(NSArray<RongRTCAVInputStream *> *)streams{
     
     // 订阅资源
-    [self.room.remoteUsers.firstObject subscribeAVStream:streams tinyStreams:nil completion:^(BOOL isSuccess, NSString *desc) {
+    [self.room.remoteUsers.firstObject subscribeAVStream:streams tinyStreams:nil completion:^(BOOL isSuccess, RongRTCCode desc) {
         
     }];
     // 设置远端渲染视图

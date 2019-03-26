@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <RongIMLib/RongIMLib.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[RCIMClient sharedRCIMClient] initWithAppKey:@"XXXXXXX"];
+    [[RCIMClient sharedRCIMClient] connectWithToken:@"token" success:^(NSString *userId) {
+        // 连接成功，可以加入房间了
+    } error:^(RCConnectErrorCode status) {
+        
+    } tokenIncorrect:^{
+        
+    }];
+    
     return YES;
 }
 
