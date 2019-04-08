@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  RongRTCQuickDemo
+//  HelloRTC
 //
-//  Created by jfdreamyang on 2019/3/19.
+//  Created by jfdreamyang on 2019/3/29.
 //  Copyright © 2019 RongCloud. All rights reserved.
 //
 
@@ -20,20 +20,37 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     // AppKey 设置
-//    [[RCIMClient sharedRCIMClient] initWithAppKey:@"XXXXXXX"];
-//    连接 IM
+    //    [[RCIMClient sharedRCIMClient] initWithAppKey:@"XXXXXXX"];
+    //    连接 IM
     // 加入房间
-    [[RongRTCEngine sharedEngine] joinRoom:@"HelloRTC" completion:^(RongRTCRoom * _Nullable room, RongRTCCode code) {
-        room.delegate = self;
-        self.room = room;
-        // 发布资源
-        [room.localUser publishDefaultAVStream:^(BOOL isSuccess, RongRTCCode desc) {
-            
-        }];
-    }];
-    // 设置本地渲染视图
-    RongRTCLocalVideoView * localView = [[RongRTCLocalVideoView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    
+    [[RongRTCAVCapturer sharedInstance] setCaptureParam:[RongRTCVideoCaptureParam defaultParameters]];
+    RongRTCLocalVideoView * localView = [[RongRTCLocalVideoView alloc]initWithFrame:self.view.bounds];
+    [self.view addSubview:localView];
     [[RongRTCAVCapturer sharedInstance] setVideoRender:localView];
+    [[RongRTCAVCapturer sharedInstance] startCapture];
+    // 设置本地渲染视图
+    
+    [[RCIMClient sharedRCIMClient] connectWithToken:@"token" success:^(NSString *userId) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[RongRTCEngine sharedEngine] joinRoom:@"HelloRTC" completion:^(RongRTCRoom * _Nullable room, RongRTCCode code) {
+                room.delegate = self;
+                self.room = room;
+                // 发布资源
+                [room.localUser publishDefaultAVStream:^(BOOL isSuccess, RongRTCCode desc) {
+                    
+                }];
+            }];
+        });
+        
+    } error:^(RCConnectErrorCode status) {
+        
+    } tokenIncorrect:^{
+        
+    }];
+    
+    
 }
 
 -(void)didPublishStreams:(NSArray<RongRTCAVInputStream *> *)streams{

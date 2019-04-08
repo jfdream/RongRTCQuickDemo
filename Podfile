@@ -4,7 +4,7 @@
 target 'RongRTCQuickDemo' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
-  pod 'RongRTCLib', '~> 0.0.1'
+  pod 'RongRTCLib', '~> 3.0.0'
   # Pods for RongRTCQuickDemo
 
   target 'RongRTCQuickDemoTests' do

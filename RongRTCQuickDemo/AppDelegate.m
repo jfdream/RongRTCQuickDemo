@@ -18,14 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[RCIMClient sharedRCIMClient] initWithAppKey:@"XXXXXXX"];
-    [[RCIMClient sharedRCIMClient] connectWithToken:@"token" success:^(NSString *userId) {
-        // 连接成功，可以加入房间了
-    } error:^(RCConnectErrorCode status) {
-        
-    } tokenIncorrect:^{
-        
-    }];
+    [[RCIMClient sharedRCIMClient] initWithAppKey:@"appKey"];
+    RCIMClient.sharedRCIMClient.logLevel = RC_Log_Level_Info;
     
     return YES;
 }
